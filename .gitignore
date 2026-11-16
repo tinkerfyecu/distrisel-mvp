@@ -1,0 +1,64 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+# agent-harness-kit
+.harness/harness.db
+.harness/harness.db-shm
+.harness/harness.db-wal
+
+# Environment secrets; only sanitized templates should be published
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Private machine settings and local permissions (not shared agent instructions)
+*.local.json
+.claude/settings.local.json
+.claude/settings.local.*.json
+.mcp.local.json
+.codex/auth.json
+.codex/sessions/
+.codex/history.jsonl
+.aws/
+.ssh/
+.npmrc
+.netrc
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local harness state, ownership databases, caches and execution history.
+# Keep the portable health/Windows compatibility scripts available to collaborators.
+.harness/*
+!.harness/scripts/
+
+# Configuration backups can contain old secrets or private paths
+*.bak
+*.backup
+*.backup-*
+
+# Keep .mcp.json, .claude/agents, .claude/skills, AGENTS.md and docs tracked:
+# the reviewed shared configuration/instructions contain no detected credentials.
